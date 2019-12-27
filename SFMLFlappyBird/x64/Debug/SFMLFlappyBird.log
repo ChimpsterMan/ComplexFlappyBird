@@ -1,0 +1,46 @@
+﻿  Bird.cpp
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,71): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,71): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,71): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,71): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,71): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,58): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,58): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,58): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,58): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(17,58): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,52): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,52): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,52): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,52): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,43): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,43): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,43): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(19,43): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(41,57): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(42,58): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,52): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,52): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,52): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,52): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,43): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,43): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,43): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(47,43): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,52): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,52): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,52): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,52): warning C4244:         ]
+  SFMLFlappyBird.cpp
+  Generating Code...
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,43): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,43): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,43): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Bird.cpp(67,43): warning C4244:         ]
+sfml-graphics.lib(sfml-graphics-2.dll) : fatal error LNK1112: module machine type 'x86' conflicts with target machine type 'x64'

@@ -1,2 +1,43 @@
-﻿  SFMLFlappyBird.cpp
+﻿  Button.cpp
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,43): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,43): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,43): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,43): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,43): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,40): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,40): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,40): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,40): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(16,40): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,33): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,33): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,33): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,33): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,33): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,27): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,27): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,27): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,27): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(19,27): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,47): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,47): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,47): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,47): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,47): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,35): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,35): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,35): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,35): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(20,35): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,34): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,34): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,34): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,34): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,34): warning C4244:         ]
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,31): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,31): warning C4244:         with
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,31): warning C4244:         [
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,31): warning C4244:             T=float
+C:\Users\chimp\source\repos\SFMLFlappyBird\SFMLFlappyBird\Button.cpp(21,31): warning C4244:         ]
   SFMLFlappyBird.vcxproj -> C:\Users\chimp\source\repos\SFMLFlappyBird\Debug\SFMLFlappyBird.exe

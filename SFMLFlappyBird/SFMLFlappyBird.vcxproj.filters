@@ -21,9 +21,21 @@
     <ClCompile Include="Bird.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bird.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
