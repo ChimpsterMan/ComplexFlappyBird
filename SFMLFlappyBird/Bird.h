@@ -47,6 +47,8 @@ public:
 	void setPosition(int x, int y);
 	void setX(double x);
 	void setY(double y);
+	void setVX(double x);
+	void setVY(double y);
 
 	//getters
 	sf::Sprite getBody();
@@ -54,5 +56,6 @@ public:
 	double getY();
 	double getWidth();
 	double getHeight();
-
+	double getXVelocity();
+	double getYVelocity();
 };

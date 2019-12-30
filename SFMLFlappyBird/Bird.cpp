@@ -284,6 +284,14 @@ void Bird::setY(double y) {
 	Bird::y = y;
 }
 
+void Bird::setVX(double x) {
+	Bird::vX = x;
+}
+
+void Bird::setVY(double y) {
+	Bird::vY = y;
+}
+
 //getters
 
 sf::Sprite Bird::getBody() {
@@ -304,4 +312,12 @@ double Bird::getWidth() {
 
 double Bird::getHeight() {
 	return Bird::body.getTextureRect().height * body.getScale().y;
+}
+
+double Bird::getXVelocity() {
+	return Bird::vX;
+}
+
+double Bird::getYVelocity() {
+	return Bird::vY;
 }

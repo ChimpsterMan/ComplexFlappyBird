@@ -129,3 +129,7 @@ double Pipe::getWidth() {
 double Pipe::getHeight() {
 	return Pipe::body.getTextureRect().height * body.getScale().y;
 }
+
+bool Pipe::isVisible() {
+	return Pipe::visible;
+}

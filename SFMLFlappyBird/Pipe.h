@@ -41,4 +41,5 @@ public:
 	double getY();
 	double getWidth();
 	double getHeight();
+	bool isVisible();
 };

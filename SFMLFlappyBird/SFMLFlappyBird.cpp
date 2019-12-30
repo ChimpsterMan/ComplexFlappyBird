@@ -37,10 +37,11 @@ vector<Pipe> pipes;
 int scroll = 0;
 int cooldown = 300;
 int timer = 0;
-
+int score;
 
 double difficulty;
 
+void setup();
 void moveBackground(double movement);
 
 void drawPipes() {
@@ -50,17 +51,24 @@ void drawPipes() {
 }
 
 void draw() {
-	window.clear();
 	window.draw(backgroundSprite);
 	window.draw(backgroundSprite2);
 	drawPipes();
 	window.draw(bird.getBody());
-	window.display();
+	
+	sf::Font font;
+	if (!font.loadFromFile("arial.ttf")) {
+
+	}
+
+	sf::Text scr = sf::Text("Score: " + to_string(score), font, 70);
+	scr.setFillColor(sf::Color::Black);
+	scr.setOrigin((scr.getGlobalBounds().width / 2), (scr.getGlobalBounds().height / 2));
+	scr.setPosition(WIDTH / 9, HEIGHT / 20);
+	window.draw(scr);
 }
 
 void drawMenu() {
-	window.clear();
-
 	moveBackground(-1);
 	window.draw(backgroundSprite);
 	window.draw(backgroundSprite2);
@@ -70,17 +78,63 @@ void drawMenu() {
 		
 	}
 
-	sf::Text title = sf::Text("Flappy Bird", font, 100);
+	
+	sf::Text title = sf::Text("FLAPPY BIRD", font, 100);
 	title.setFillColor(sf::Color::Black);
 	title.setOrigin((title.getGlobalBounds().width / 2), (title.getGlobalBounds().height / 2));
 	title.setPosition(WIDTH/2, HEIGHT/6);
 	window.draw(title);
 
+	sf::Text playText = sf::Text(playButton.getText().getString(), font, playButton.getText().getCharacterSize());
+	playText.setOrigin(playButton.getText().getOrigin());
+	playText.setPosition(playButton.getText().getPosition());
+	playText.setFillColor(playButton.getText().getFillColor());
 	window.draw(playButton.getBox());
-	window.draw(playButton.getText());
+	window.draw(playText);
 
-	window.display();
+	if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+		if (playButton.testClick(sf::Mouse::getPosition().x, sf::Mouse::getPosition().y)) {
+			stage = 1;
+		}
+	}
+}
 
+void drawGameOver() {
+	bird.setVX(0);
+
+	moveBackground(-1);
+	window.draw(backgroundSprite);
+	window.draw(backgroundSprite2);
+
+	sf::Font font;
+	if (!font.loadFromFile("arial.ttf")) {
+
+	}
+
+	sf::Text title = sf::Text("Game Over", font, 100);
+	title.setFillColor(sf::Color::Black);
+	title.setOrigin((title.getGlobalBounds().width / 2), (title.getGlobalBounds().height / 2));
+	title.setPosition(WIDTH / 2, HEIGHT / 6);
+	window.draw(title);
+
+	sf::Text playText = sf::Text("Play", font, playButton.getText().getCharacterSize());
+	playText.setOrigin(playButton.getText().getOrigin());
+	playText.setPosition(playButton.getText().getPosition());
+	playText.setFillColor(playButton.getText().getFillColor());
+	window.draw(playButton.getBox());
+	window.draw(playText);
+
+	sf::Text scr = sf::Text("Score: " + to_string(score), font, 70);
+	scr.setFillColor(sf::Color::Black);
+	scr.setOrigin((scr.getGlobalBounds().width / 2), (scr.getGlobalBounds().height / 2));
+	scr.setPosition(WIDTH / 2, HEIGHT / 3);
+	window.draw(scr);
+
+	if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+		if (playButton.testClick(sf::Mouse::getPosition().x, sf::Mouse::getPosition().y)) {
+			setup();
+		}
+	}
 }
 
 void controls(Bird *b) {
@@ -149,7 +203,12 @@ void pipeUpdate() {
 		//check for collision with bird
 		if (pipes[i].checkCollision(bird.getX() + bird.getWidth() / 2, bird.getY() + bird.getHeight() / 2)) {
 			gameOver = true;
-			cout << "game over" << endl;
+			stage = 2;
+		}
+
+		//update score
+		if (pipes[i].getX() + pipes[i].getWidth() - bird.getXVelocity() <= bird.getX() && pipes[i].getX() + pipes[i].getWidth() >= bird.getX() && pipes[i].isVisible()) {
+			score += 1;
 		}
 		
 		//remove old pipes
@@ -160,6 +219,11 @@ void pipeUpdate() {
 			//make new replacement for pipe
 			createPipe();
 		}
+	}
+
+	if (bird.getY() > HEIGHT) {
+		gameOver = true;
+		stage = 2;
 	}
 }
 
@@ -188,12 +252,17 @@ void sideScrollUpdate() {
 
 void setup() {
 	gameOver = false;
+	pipes.clear();
 	difficulty = 3;
 	stage = 0;
+	score = 0;
 	string str = "Play";
 	playButton = Button(str, sf::Color::Blue, 50, WIDTH / 2, HEIGHT / 2, 200, 70);
+	scroll = 0;
+	cooldown = 300;
+	timer = 0;
 
-	bird.setPosition(-100, HEIGHT / 2);
+	bird.setPosition(-100, HEIGHT / 4);
 
 	backgroundTexture.loadFromFile("background.png");
 	backgroundSprite.setTexture(backgroundTexture);
@@ -203,15 +272,14 @@ void setup() {
 	backgroundSprite.setScale((float)WIDTH / backgroundTexture.getSize().x, (float)HEIGHT / backgroundTexture.getSize().y);
 	backgroundSprite2.setScale((float)WIDTH / backgroundTexture.getSize().x, (float)HEIGHT / backgroundTexture.getSize().y);
 
-	window.create(sf::VideoMode(WIDTH, HEIGHT), "Complex Flappy Bird");
-	window.setFramerateLimit(FPS);
-
 	createPipe(difficulty);
 }
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	window.create(sf::VideoMode(WIDTH, HEIGHT), "Complex Flappy Bird");
+	window.setFramerateLimit(FPS);
+
 	setup();
 
 	sf::Event event;
@@ -224,6 +292,7 @@ int main()
 			}
 		}
 
+		window.clear();
 		if (stage == 0) {
 			drawMenu();
 		}
@@ -234,6 +303,12 @@ int main()
 			sideScrollUpdate();
 			draw();
 		}
+		else if (stage == 2) {
+			pipeUpdate();
+			sideScrollUpdate();
+			drawGameOver();
+		}
+		window.display();
 	}
 
 	return 0;
